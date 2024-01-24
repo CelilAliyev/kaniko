@@ -21,7 +21,7 @@ spec:
   volumes:
     - name: kaniko-secret
       secret:
-        secretName: jenkins
+        secretName: regcred
         items:
           - key: .dockerconfigjson
             path: config.json
